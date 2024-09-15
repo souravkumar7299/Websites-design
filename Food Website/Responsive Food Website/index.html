@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradico Security</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap">
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/Assets/Myfavicon.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/eba2eec602.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/66000e95a0c6737bd1241e55/1hpo3hupv';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <!-- Floating media Icon -->
+    <style>
+        .social-ul {
+            padding: 0;
+            list-style: none;
+            display: inline-block;
+            margin: 10px auto;
+            position: absolute;
+            z-index: 1111;
+            transition: .5s;
+            right: 16px;
+        }
+
+        .social-ul li {
+            float: none;
+            display: table;
+
+        }
+
+        .social-ul a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: right;
+            width: 48px;
+            height: 48px;
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center;
+            line-height: 48px;
+            position: relative;
+            -moz-transition: .5s;
+            -o-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+
+        .whatsapp {
+            background: #33ad2d;
+            border-radius: 50%;
+        }
+
+        .instagram {
+            border-radius: 50%;
+            background: #fb3958;
+        }
+
+        .facebook {
+            border-radius: 50%;
+            background: #2a4893;
+        }
+
+        .youtube {
+            background: #f00;
+            border-radius: 50%;
+        }
+
+        .linkedin {
+            background: #007bb6;
+            border-radius: 50%;
+
+        }
+
+        .twitter {
+            background: #0095cd;
+            border-radius: 50%;
+        }
+    </style>
+    <script>
+        $(window).scroll(function () {
+            var navTop = $(window).scrollTop();
+            var navBottom = $(window).scrollTop();
+            $('.social-ul').css("top", navTop + 170);
+            $('.social-ul').css("bottom", navBottom - 195);
+        });
+    </script>
+
+    <section class="social-media-section">
+        <div class="social-media-container">
+            <ul class="social-ul">
+                <li> <a class="whatsapp" href="https://wa.link/iycqtt" target="_blank"><i
+                            class="fa fa-whatsapp faabhi"></i></a></li>
+                <li><a href="https://www.instagram.com/gradico.securities?igsh=MWwxZnluMjg2ZXR4cQ%3D%3D&utm_source=qr"
+                        target="_blank" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/share/p5VXJ6iXB4JHbbYo/?mibextid=WC7FNe" target="_blank"
+                        class="facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/@GradicoSecurity" target="_blank" class="youtube"><i
+                            class="fa fa-youtube-play"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/gradico-security-3169ba2bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <!-- <li><a href="https://twitter.com" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li> -->
+            </ul>
+        </div>
+    </section>
+    <!-- Floating media Icon -->
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo"><img src="img/Assets/MyLogo.jpg" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Vision</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="mainlyy">
+            <h1 class="h1head"><span style="color: #00000078;">Welcome &nbsp; to </span><br/><span style="color:#3472c2">Gradico</span> <span style="color: #f1461f;">Security</span> <div class="roller">
+              <span id="rolltext"> Your Safety<br/>
+              is Our<br/>
+              Priority<br/>
+              <br/>
+              </div>
+              </h1>
+              
+            </div>
+        <div class="home-img">
+            <img src="img/Assets/30038792_2107_i203_024_f_m004_c9_security_guard_agency_service_cartoon.jpg"
+                alt="">
+        </div>
+        
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+        <h1>Today Deal's</h1>
+
+        <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="https://i.postimg.cc/Y9S8C1D9/bannerblur.jpg" alt="Slide 1">
+              </div>
+              <div class="slide">
+                <img src="https://i.postimg.cc/Y9S8C1D9/bannerblur.jpg" alt="Slide 2">
+              </div>
+              <div class="slide">
+                <img src="https://i.postimg.cc/Y9S8C1D9/bannerblur.jpg" alt="Slide 3">
+              </div>
+            </div>
+          </div>
+          
+    </section>
+    <script>
+        let slider = document.querySelector('.slider');
+        let slides = document.querySelectorAll('.slide');
+        
+        let currentIndex = 0;
+        let slideWidth = slides[currentIndex].clientWidth;
+        
+        function goToSlide(index) {
+          slider.style.transform = `translateX(-${index * slideWidth}px)`;
+          currentIndex = index;
+        }
+        
+        setInterval(() => {
+          if (currentIndex === slides.length - 1) {
+            goToSlide(0);
+          } else {
+            goToSlide(currentIndex + 1);
+          }
+        }, 3000); // Change slide every 3 seconds
+        </script>
+    <!-- Shop -->
+    <section class="shop" id="shop">
+        <div class="heading">
+            <h2>Journey</h2>
+        </div>
+        <div class="shop-container">
+            <div class="shop-box">
+                <div class="shop-img">
+                    <img src="img/shop1.jpg" alt="">
+                </div>
+               
+            </div>
+
+            <div class="shop-box">
+                <div class="shop-img">
+                    <img src="img/shop2.jpg" alt="">
+                </div>
+                
+            </div>
+
+            <div class="shop-box">
+                <div class="shop-img">
+                    <img src="img/shop3.jpg" alt="">
+                </div>
+                
+            </div>
+
+            <div class="shop-box">
+                <div class="shop-img">
+                    <img src="img/shop4.jpg" alt="">
+                </div>
+              
+            </div>
+
+            <div class="shop-box">
+                <div class="shop-img">
+                    <img src="img/shop5.jpg" alt="">
+                </div>
+               
+            </div>
+
+            <div class="shop-box">
+                <div class="shop-img">
+                    <img src="img/shop6.jpg" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <div class="feat bg-gray pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="section-head col-sm-12">
+              <h4><span>Why Choose</span> Us?</h4>
+              <p>When you choose us, you'll feel the benefit of 10 years' experience of Web Development.</p>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
+                <h6>Office Security</h6>
+                <p>We use latest technology for the latest world because we know the demand of peoples.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-anchor"></i></span>
+                <h6>
+                    CCTV Surveillance</h6>
+                <p>We are always creative and and always lisen our costomers  things and make beast design.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-hourglass-half"></i></span>
+                <h6>24 x 7 Support</h6>
+                <p>If our customer has any problem and any query we are always happy to help then.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="item"> <span class="icon feature_box_col_four"><i class="fa fa-database"></i></span>
+                <h6>Business Growth</h6>
+                <p>Everyone wants to live on top of the mountain, but all the  while you're climbing it</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-upload"></i></span>
+                <h6> Facility Management</h6>
+                <p>Holding back technology to preserve broken business models in order to protect.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="item"> <span class="icon feature_box_col_six"><i class="fa fa-camera"></i></span>
+                <h6>Personal Security</h6>
+                <p>Protecting what matters most, wherever you go. Your safety, our priority</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="container mypadding ">
+    <div class="heading galleryMargin">
+        <h2>Gallery</h2>
+    </div>
+    <div class="parent ">
+    <div class="div1 myboxShadow"><img src="img/Assets/man-withdraws-money-using-atm-city-created-with-generative-ai-technology_132358-13111.jpg" class="myboxShadow"/> </div>
+    <div class="div2 myboxShadow"><img src="img/Assets/man-withdraws-money-using-atm-city-created-with-generative-ai-technology_132358-13111.jpg" class="myboxShadow"/> </div>
+    <div class="div3 myboxShadow"><img src="img/Assets/photo-atm-credit-debit-card-clipping-path-included-atm-background-finance-banking-concept_175994-22993.jpg"class="myheightGallery myboxShadow"/> </div>
+    <div class="div4 myboxShadow"><img src="img/Assets/man-withdraws-money-using-atm-city-created-with-generative-ai-technology_132358-13111.jpg" class="myboxShadow"/> </div>
+    <div class="div5 myboxShadow"><img src="img/Assets/man-withdraws-money-using-atm-city-created-with-generative-ai-technology_132358-13111.jpg" class="myboxShadow"/> </div>
+    <div class="div6 myboxShadow"> <img src="img/Assets/photo-atm-credit-debit-card-clipping-path-included-atm-background-finance-banking-concept_175994-22993.jpg" class="myheightGallery myboxShadow"/> </div>
+    </div>
+
+</div>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color:#fff;"> Our Services</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="icon-box icon-box-cyan">
+                        <div class="icon">
+                            <img src="img/c1.jpg"
+                                alt="www.pskmanpowerservices.com, manpower for security in delhi, ncr, manpower for housekeeping in delhi, ncr">
+                        </div>
+                        <h4 class="title"><a href="service.html#a">Security Solution</a></h4>
+                        <p class="description">
+                            Find best security guard agency, company for personal,residential ,commercial &amp; events
+                            purpose </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="icon-box icon-box-cyan">
+                        <div class="icon">
+                            <img src="img/c1.jpg"
+                                alt="www.pskmanpowerservices.com, manpower for security in delhi, ncr, manpower for housekeeping in delhi, ncr">
+                        </div>
+                        <h4 class="title"><a href="service.html#c">Housekeeping Services</a></h4>
+                        <p class="description">
+                            Housekeeping refers to the management of duties and chores involved in the running of a
+                            household, such as cleaning, home maintenance, laundry. </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="icon-box icon-box-cyan">
+                        <div class="icon">
+                            <img src="img/c1.jpg"
+                                alt="www.pskmanpowerservices.com, manpower for security in delhi, ncr, manpower for housekeeping in delhi, ncr">
+                        </div>
+                        <h4 class="title"><a href="service.html#b">Cleaning Services</a></h4>
+                        <p class="description"> We are offering Cleaning &amp; Sanitation and Disinfection Services </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="icon-box icon-box-cyan">
+                        <div class="icon"> <img src="img/c1.jpg"
+                                alt="www.pskmanpowerservices.com, manpower for security in delhi, ncr, manpower for housekeeping in delhi, ncr">
+                        </div>
+                        <h4 class="title"><a href="service.html#d">Peon Services</a></h4>
+                        <p class="description">
+                            Hire Peon in Delhi is a top company in the category Housekeeping Services, also known for
+                            Sofa Cleaning Services, Car Cleaning Services and other services. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="customer" id="customer">
+        <div class="heading">
+            <h2>Our Customer's</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, cupiditate.</p> -->
+        </div>
+        <div class="customer-container">
+            <div class="box">
+                <img src="img/c1.jpg" alt="">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, vero inventore ut voluptatum sit
+                    minus.</p>
+                <h2>Tayler Swift</h2>
+            </div>
+
+            <div class="box">
+                <img src="img/c2.jpg" alt="">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, vero inventore ut voluptatum sit
+                    minus.</p>
+                <h2>Zayn Malik</h2>
+            </div>
+
+            <div class="box">
+                <img src="img/c3.jpg" alt="">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, vero inventore ut voluptatum sit
+                    minus.</p>
+                <h2>Ketty Perry</h2>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Your security is our priority. Trust us to protect what matters most.</p>
+                <div class="adress">
+                    <i class='bx bxs-map'><span>Ecovillage-II, B2</span></i>
+                    <i class='bx bxs-phone'><span><a href="tel:9693542473"
+                                style="text-decoration: none; color: #000;">+91-969354 2473</a></span></i>
+                    <i class='bx bxs-envelope'><span><a href="mailto:gradico.securities@gmail.com"
+                                style="text-decoration: none; color: #000;">gradico.securities@gmail.com</a></span></i>
+                </div>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                            marginheight="0" marginwidth="0"
+                            src="https://maps.google.com/maps?width=655&amp;height=256&amp;hl=en&amp;q=Ecovillage-II&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                            href="https://strandsgame.net/">Strands</a></div>
+                    <style>
+                        @media only screen and (max-width: 768px) {
+                            .mapouter {
+                                width: 100% !important;
+                            }
+                        }
+
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            width: 86%;
+                            height: 256px;
+                        }
+
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            width: 100%;
+                            height: 256px;
+                        }
+
+                        .gmap_iframe {
+                            height: 256px !important;
+                        }
+                    </style>
+                </div>
+                <div class="social" style="display: none;">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Full Name*">
+                    <input type="email" name="" id="" placeholder="Email*">
+                    <input type="number" name="" id="" placeholder="Contact*" class="frminput">
+
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message*"></textarea>
+                    <input type="button" value="Submit" class="mysubtn">
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="lg:h-screen flex items-end justify-center">
+        <div class="w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
+          <div class="container pt-14">
+            <div class="bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-red-900 via-violet-200 to-orange-500 py-14 px-10 rounded-2xl">
+              <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
+                <div>
+                  <h1 class="text-white text-4xl">Dominating Security Landscapes, Defending Your Future</h1>
+                </div>
+                <div class="relative flex items-center justify-end">
+                  <div class="py-4 px-4 bg-black rounded-lg">
+                    <p class="text-white">Try 14 Days FREE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
+              <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <div class="col-span-full lg:col-span-2">
+                  <div class="flex items-center">
+                    <a href="#" class="logo"><img src="img/Assets/MyLogo.jpg" alt=""></a>
+                  </div>
+                  <p class="text-white mt-6">Boldly Secure: Protecting What Matters Most</p>
+                </div>
+                <div class="col-span-1">
+                  <h4 class="font-semibold text-gray-100 uppercase">Product</h4>
+                  <div class="mt-6 grid space-y-3">
+                    <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200" href="#">Services</a></p>
+                    <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200" href="#">About Us</a></p>
+                    <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200" href="#">News & Stories</a></p>
+                    <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200" href="#">Roadmap</a></p>
+                  </div>
+                </div>
+                <div class="col-span-1">
+                  <h4 class="font-semibold text-gray-100 uppercase">Important Links</h4>
+                  <div class="mt-6 grid space-y-3">
+                    <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200" href="#">Our Journeys</a></p>
+                    <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200" href="#">Roadmap</a></p>
+                    <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200" href="#">Pricing Plans</a></p>
+                  </div>
+                </div>
+                <div class="col-span-1">
+                  <h4 class="font-semibold text-gray-100 uppercase">Downloads</h4>
+                  <div class="mt-6 grid space-y-3">
+                    <img src="https://i.postimg.cc/43nhk9y7/store.png" class="h-12" alt="">
+                    <img src="https://i.postimg.cc/VkKbVRfP/google.png" class="h-12" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
+                <div class="flex justify-between items-center">
+                  <p class="text-sm text-gray-400">
+                    &#169;  2024 Gradico Security All rights reserved.   |   Developed by Sourav</p>
+                  </p>
+                </div>
+                <div>
+                  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-primary transition-all duration-300" href="#">
+                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                  </a>
+                  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-primary transition-all duration-300" href="#">
+                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                    </svg>
+                  </a>
+                  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-primary transition-all duration-300" href="#">
+                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                  </a>
+                  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-primary transition-all duration-300" href="#">
+                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                  </a>
+                  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-primary transition-all duration-300" href="#">
+                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- Copyright -->
+    
+    <!-- Link To JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
